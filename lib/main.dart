@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/Theme/app_theme.dart';
+import 'package:todo_app/core/locators/locators.dart';
 import 'package:todo_app/core/routes/routes.dart';
 import 'package:todo_app/core/utils/app_string.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setUpLocator();
   runApp(const MyApp());
 }
 

@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# data base file paths
+./lib/utils/appwrite_constants.dart
