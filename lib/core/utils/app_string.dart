@@ -1,5 +1,3 @@
-
-
 class AppString {
   static const appName = "Todo App";
   static const email = "Email";
@@ -9,15 +7,17 @@ class AppString {
   static const firstName = "FirstName";
   static const lastName = "LastName";
   static const provideVlaidName = "Provide Valid Name";
+  static const provideVlaidEmail = "provide Valid Email";
   static const register = "Register";
 
   static const internalServerError = "Internal Server Error";
   static const internetNotFound = "Internet Not Found";
   static const login = "Login";
   static const accountCreate = "Account Create";
+  static const alreadyRegisterThisAccount = "Already Register This Account? ";
 
   static const searchByName = "Search By Name";
-  static const newUser = "Don't have an account?";
+  static const newUser = "Don't have an account? ";
   static const noDataFound = "No Data Found";
 
   static const todo = "Todo List";
