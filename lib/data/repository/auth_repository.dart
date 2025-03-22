@@ -16,6 +16,11 @@ abstract interface class IAuthRepository {
     required String email,
     required String password,
   });
+
+  Future<Either<Faiilure, Session>> login({
+    required String email,
+    required String password,
+  });
 }
 
 class AuthRepository implements IAuthRepository {
@@ -47,6 +52,28 @@ class AuthRepository implements IAuthRepository {
               "email": email,
             });
         return right(user);
+      } else {
+        return left(Faiilure(AppString.internetNotFound));
+      }
+    } on AppwriteException catch (e) {
+      return left(Faiilure(e.message!));
+    } on ServerExceptions catch (e) {
+      return left(Faiilure(e.message!));
+    }
+  }
+
+  @override
+  Future<Either<Faiilure, Session>> login(
+      {required String email, required String password}) async {
+    try {
+      if (await _internetConnectionChecker.hasConnection) {
+        Session session =
+            await _appWriteProvider.account!.createEmailPasswordSession(
+          email: email,
+          password: password,
+        );
+
+        return right(session);
       } else {
         return left(Faiilure(AppString.internetNotFound));
       }

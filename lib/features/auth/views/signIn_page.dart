@@ -61,6 +61,7 @@ class _SigninPageState extends State<SigninPage> {
                   CustomeSnackbar.showSuccess(context, AppString.accountCreate);
                   context.goNamed(RoutesName.login);
                 } else if (state is RegisterError) {
+                  FullScreenDialogLoader.cancel(context);
                   CustomeSnackbar.showError(context, state.error);
                 }
               },

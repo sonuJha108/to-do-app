@@ -36,4 +36,5 @@ class AppString {
   static const profile = "Profile";
   static const logout = "Logout";
   static const profileUpdated = "Profile Updated";
+  static const sucess = "Sucess";
 }
