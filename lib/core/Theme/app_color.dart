@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// All the theme and colors here
 class AppColor {
   static const Color backGroundColor = Color(0xff141A31);
   static const Color appBarColor = Color(0xff1E2746);

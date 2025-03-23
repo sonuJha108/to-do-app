@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:todo_app/core/Theme/app_color.dart';
 
+// staring of thr screen to show the app is call
+
 class CustomeSnackbar {
   static void _showSnackBar(BuildContext context, String message, Color color) {
     WidgetsBinding.instance.addPostFrameCallback((_) => {

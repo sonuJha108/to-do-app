@@ -1,3 +1,7 @@
+/*
+  The cloud appwrite using the link ids and data collections
+ */
+
 class AppwriteConstants {
   static const endpoint = "https://cloud.appwrite.io/v1";
   static const projectId = "67d91f450027e2d843aa";

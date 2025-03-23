@@ -5,7 +5,9 @@ import 'package:todo_app/features/auth/views/signin_page.dart';
 import 'package:todo_app/features/splash/views/splash_view.dart';
 import 'package:todo_app/features/todo/views/todo_view.dart';
 
+// using the go routes packages in the app
 final GoRouter router = GoRouter(routes: [
+  // Go route modules using its takes the 3 type path name of the routes and builder and create the main page path
   GoRoute(
     path: "/",
     name: RoutesName.splash,

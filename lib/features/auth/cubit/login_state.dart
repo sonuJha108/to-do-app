@@ -1,5 +1,6 @@
 part of 'login_cubit.dart';
 
+// all the  login  states  are here
 sealed class LoginState {}
 
 final class LoginInitial extends LoginState {}

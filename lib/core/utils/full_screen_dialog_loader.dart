@@ -3,7 +3,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:todo_app/core/Theme/app_color.dart';
 
+// the screen dialog loader page its show and check the auth in the app and go to next page.
 class FullScreenDialogLoader {
+  
   static bool _isDialogOpen = false;
 
   static void show(BuildContext context) {

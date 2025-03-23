@@ -1,3 +1,5 @@
+
+// Here all the text using the app
 class AppString {
   static const appName = "Todo App";
   static const email = "Email";

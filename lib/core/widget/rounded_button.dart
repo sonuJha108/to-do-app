@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/Theme/app_color.dart';
 
+// create the custome buttons
 class RoundedButton extends StatelessWidget {
+  // A functions is create and all data are required.
   const RoundedButton({
     super.key,
     required this.buttonText,
@@ -9,6 +11,7 @@ class RoundedButton extends StatelessWidget {
     required this.color,
   });
 
+  // create the variables in the buttons
   final String buttonText;
   final Function()? onPressed;
   final Color color;
@@ -27,8 +30,9 @@ class RoundedButton extends StatelessWidget {
             ),
           ),
         ),
-        fixedSize:
-            WidgetStatePropertyAll(Size(MediaQuery.sizeOf(context).width, 45)),
+        fixedSize: WidgetStatePropertyAll(
+          Size(MediaQuery.sizeOf(context).width, 45),
+        ),
       ),
       child: Text(
         buttonText,
