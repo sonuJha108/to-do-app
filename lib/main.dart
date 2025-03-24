@@ -8,6 +8,7 @@ import 'package:todo_app/core/utils/app_string.dart';
 import 'package:todo_app/features/auth/cubit/login_cubit.dart';
 import 'package:todo_app/features/auth/cubit/register_cubit.dart';
 import 'package:todo_app/features/splash/cubit/splash_cubit.dart';
+import 'package:todo_app/features/todo/cubit/todo_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +19,7 @@ void main() async {
       BlocProvider(create: (_) => RegisterCubit()),
       BlocProvider(create: (_) => LoginCubit()),
       BlocProvider(create: (_) => SplashCubit()),
+      BlocProvider(create: (_) => TodoCubit()),
     ],
     child: const MyApp(),
   ));
